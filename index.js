@@ -2,7 +2,6 @@
 let driver = {};
 
 function updateDriverWithKeyAndValue(driver, key, value){
-  driver["name"] = driver;
-  driver[key] = value
+  Object.assign({},driver,{["name"]=driver},{[key]=value})
   
 }
